@@ -505,8 +505,8 @@ function initMap() {
       autoInitAmbientFromData();
     });
 
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png", {
-    subdomains: "abcd", maxZoom: 19, zIndex: 700,
+  L.tileLayer("https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}", {
+    maxZoom: 19, zIndex: 700,
     pane: "overlayPane",
   }).addTo(map);
 
